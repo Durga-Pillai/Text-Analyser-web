@@ -1,0 +1,51 @@
+.toggle-container {
+        position:fixed;
+        top: 2em;
+        right: 2em;
+        transform: translateY(-50%);
+         /* margin-right: 100%; */
+        z-index: 1000; /* Ensures it appears above other elements */
+  display: flex;
+  align-items:flex-end;
+  background-color: var(--toggle-bg); /* Uses your theme variable */
+  padding: 8px 15px; /* Add some padding */
+  border-radius: 5px; /* Rounded edges for styling */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  /* margin-left: 2em; */
+
+}
+.toggle {
+    visibility:hidden;
+}
+.toggle+label {
+    display:flex;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    color:var(--primary-text-color);
+
+
+}
+.toggle+label::before {
+    content: "";
+    height: 1em;
+    width:2em;
+    border-radius: 1em;
+    background-color: var(--toggle-bg);
+    margin-right: 0.5em;
+
+}
+
+toggle+label::after {
+    content: "";
+    height: 0.8em;
+    width:0.8em;
+    border-radius: 1em;
+    background-color: var(--toggle-fg);
+    position: absolute;
+    left:0.2em;
+
+}
+.toggle:checked + label::after {
+    transform: translateX(100%);
+}
