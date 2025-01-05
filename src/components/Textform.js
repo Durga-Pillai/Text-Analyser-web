@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-
+import './Textform.css';
  
 
 export default function Textform(props) {
@@ -31,13 +31,13 @@ export default function Textform(props) {
     <textarea  className="form-control" value={text} onChange={handleonChange} id="myBox" rows="8"></textarea>
     
   </div>
-  <button className="btn btn-primary mx-2" onClick={handleClick}>Convert to Uppercase</button>
-  <button className="btn btn-primary mx-2" onClick={handlelowClick}>Convert to Lowercase</button>
+  <button className="btn-primary animated"  onClick={handleClick}>Convert to Uppercase</button>
+  <button className="btn-primary animated" onClick={handlelowClick}>Convert to Lowercase</button>
   
   </div>
   <div className ="container" my-3>
-    <h1>Your text summary</h1>
-    <p>{text.split(" ").length} words and {text.length} characters</p>
+    <h1>Your text summary</h1><br />
+    <p>{text.split(" ").length} words and {text.length} characters</p><br></br>
    <p>{0.008 *text.split(" ").length } Minutes taken to read</p>
   </div>
   </>

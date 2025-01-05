@@ -1,0 +1,25 @@
+.btn-primary {
+    background-color:green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right:2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  }
+  
+  .btn-primary:active {
+    transform: scale(0.9); /* Shrink slightly on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .container {
+    font-size: medium;
+    font-size: 1.25em;
+  }

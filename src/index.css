@@ -11,28 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-* {
+/* * {
   margin: 0;
   padding:0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 :root {
-  --background-color: lightgray;
-  --foreground-color: blue;
+  --background-color: white;
+  --foreground-color: rgba(238, 238, 17, 0.932);
   --primary-text-color:white;
-  --secondary-text-color:white;
+  --secondary-text-color : rgb(20, 18, 18);
   --toggle-bg:lavender;
-  --toggle-fg:rgb(15, 15, 150);
+  --toggle-fg:rgb(127, 127, 219);
 
 }
 [data-theme="dark"] {
-  --background-color:darkgrey;
-  --foreground-color: lightblue;
-  --primary-text-color:blue;
-  --secondary-text-color:blue;
-  --toggle-bg:darkblue;
-  --toggle-fg:blue;
+  --background-color:rgb(46, 32, 32);
+  --foreground-color: rgba(219, 219, 25, 0.788);
+  --primary-text-color:white;
+  --secondary-text-color:rgb(8, 8, 37);
+  --toggle-bg:rgb(12, 12, 32);
+  --toggle-fg:rgb(138, 138, 173);
 
 
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
+
+/* Define root-level variables for theming */
+:root {
+  --background-color: white;
+  --foreground-color: linear-gradient(90deg, rgba(238, 238, 17, 0.932), rgba(255, 123, 0, 0.8));
+  --primary-text-color: white;
+  --secondary-text-color: rgb(20, 18, 18);
+  --toggle-bg: linear-gradient(135deg, rgb(108, 108, 235), rgb(217, 217, 255));
+  --toggle-fg: rgb(127, 127, 219);
+  --button-hover: linear-gradient(90deg, rgba(255, 102, 102, 0.9), rgba(204, 204, 255, 0.9));
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --background-color: rgb(30, 30, 30);
+  --foreground-color: linear-gradient(90deg, rgba(219, 219, 25, 0.788), rgba(255, 0, 0, 0.7));
+  --primary-text-color: white;
+  --secondary-text-color: rgb(200, 200, 200);
+  --toggle-bg: linear-gradient(135deg, rgb(12, 12, 32), rgb(54, 54, 89));
+  --toggle-fg: rgb(138, 138, 173);
+  --button-hover: linear-gradient(90deg, rgba(255, 51, 51, 0.8), rgba(128, 128, 255, 0.8));
+  --shadow-color: rgba(0, 0, 0, 0.5);
 }

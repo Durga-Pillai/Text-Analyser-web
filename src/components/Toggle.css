@@ -10,7 +10,7 @@
   background-color: var(--toggle-bg); /* Uses your theme variable */
   padding: 8px 15px; /* Add some padding */
   border-radius: 5px; /* Rounded edges for styling */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 5px rgba(141, 79, 79, 0.2); 
   /* margin-left: 2em; */
 
 }

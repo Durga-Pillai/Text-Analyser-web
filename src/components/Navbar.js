@@ -6,7 +6,7 @@ export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
       <div className="container-fluid">
-        <img src="logoCT.png" alt="logo" width="75" height="75" className="navbar-logo" />
+        <img src="logoCT.png" alt="logo" width="60" height="60" className="navbar-logo" />
         <div className="navbar-brand" >{props.title}</div>
         <button
           className="navbar-toggler"
